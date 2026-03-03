@@ -1,55 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>---HOPLITE CLOUD----</title>
+<title>Hoplitecloud</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
     color: white;
     text-align: center;
 }
 
+/* Container */
 .container {
-    max-width: 500px;
+    max-width: 520px;
     margin: 60px auto;
     padding: 20px;
 }
 
-.logo {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+/* Heading Section */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    margin-bottom: 30px;
-    font-weight: 600;
+.header img {
+    width: 45px;
+    height: 45px;
 }
 
-.link {
-    display: block;
-    background: rgba(40,40,40,0.6);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.05);
-    padding: 18px;
-    margin: 14px 0;
-    border-radius: 14px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Discord Icon */
+.socials {
+    margin: 20px 0 40px 0;
+}
+
+.socials img {
+    width: 40px;
     transition: 0.2s ease;
 }
 
-.link:hover {
+.socials img:hover {
+    transform: scale(1.15);
+}
+
+/* Link Boxes */
+.link-box {
+    display: block;
+    background: rgba(35, 35, 35, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 18px;
+    margin: 16px 0;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+.link-box:hover {
     background: #2a2a2a;
-    transform: scale(1.03);
+    transform: scale(1.04);
+}
+
+/* Footer spacing */
+.spacer {
+    height: 30px;
 }
 </style>
 </head>
@@ -57,13 +92,28 @@ h1 {
 <body>
 
 <div class="container">
-    <img src="logo.png" class="logo">
-    <h1>My MC Server</h1>
 
-    <a href="https://discord.gg/yourinvite" class="link">Join Our Discord Server</a>
-    <a href="#" class="link">🎮 Server IP: -----.------.com</a>
-    <a href="#" class="link">🛒 Store</a>
-    <a href="#" class="link">📜 Rules</a>
+    <!-- Heading -->
+    <div class="header">
+        <img src="headingicon.png" alt="Icon">
+        <h1>Hoplitecloud</h1>
+    </div>
+
+    <!-- Discord Icon -->
+    <div class="socials">
+        <a href="https://discord.gg/Ee7gmytf" target="_blank">
+            <img src="discord.png" alt="Discord">
+        </a>
+    </div>
+
+    <!-- Middle Boxes -->
+    <a href="#" class="link-box">🌩 Server IP</a>
+    <a href="#" class="link-box">🛒 Store</a>
+    <a href="#" class="link-box">📜 Rules</a>
+    <a href="#" class="link-box">🗺️ Vote Links</a>
+
+    <div class="spacer"></div>
+
 </div>
 
 </body>
